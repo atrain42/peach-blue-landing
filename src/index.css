@@ -1,13 +1,59 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600&display=swap');
+
+p {
+  font-size: 18px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+button {
+  font-size: 17px;
+}
+
+h1 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+}
+
+.navbar {
+  background-color: var(--body_background);
+}
+
+:root {
+  --body_background: #F9F0E7;
+  --primary_color: #65431A;
+  --header_color: #65431A;
+  --body_color: #1E2025;
+  --secondary_btn_border: #1E2025;
+}
+
+[data-theme="dark"] {
+  --body_background: #1E2025;
+  --body_color: #FCF9F6;
+  --primary_color: #E6C39E;
+  --header_color: #E6C39E;
+  --secondary_btn_border: #E6C39E;
+}
+
+/* Navigation items hover effect */
+.hover-link::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: var(--primary_color);
+  transition: width .3s;
+}
+
+.hover-link:hover::after {
+  width: 100%;
+  transition: width .3s;
+}
+
+.material-symbols-outlined {
+  font-size: 35px;
+  color: var(--primary_color);
 }
