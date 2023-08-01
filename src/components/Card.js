@@ -3,7 +3,7 @@ import { useState } from "react"
 import { motion } from "framer-motion"
 
 import arrow from '../images/right.svg'
-import cube from '../images/cube03.png'
+import cubeDark from '../images/circle-ball.png'
 
 
 export default function Card({ num, title, text }) {
@@ -39,7 +39,7 @@ export default function Card({ num, title, text }) {
         <img
           className={`w-36 h-auto self-center transition-all ease-in`}
           rel='icon'
-          src={cube}
+          src={cubeDark}
           alt='cube icon'
         />
       </motion.div>

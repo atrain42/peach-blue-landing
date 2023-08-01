@@ -23,7 +23,7 @@ export default function SectionHeader({title, subtitle, text}) {
         {subtitle}
       </h2>
       <h1
-        className='text-header text-paragraph mv:text-4xl sm:text-5xl mb-4'
+        className='text-header mv:text-4xl sm:text-5xl mb-4'
         style={animation('0.5s', '0.3s')}
       >
         {title}
