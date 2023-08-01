@@ -2,7 +2,7 @@ import smile from '../images/peach.png'
 
 const Header = () => {
   return (
-    <header className='relative flex items-center px-8 mv:flex-col-reverse xl:flex-row lg:justify-evenly mv:pt-24 xl:pt-56'>
+    <header className='relative flex items-center px-8 justify-evenly h-screen'>
       <div className='mv:w-full md:w-[32rem]'>
         <h1 className='mv:text-5xl xl:text-7xl header-color'>Lorum Isum</h1>
         <h1 className='mv:text-5xl xl:text-7xl'>dolar sit amet</h1>
@@ -27,9 +27,9 @@ const Header = () => {
           </button>
         </div>
       </div>
-      <div className='mv:h-full md:h-280 w-auto mv:mb-12 xl:mb-0'>
+      <div className='w-4/12 h-auto'>
         <img
-          className='mx-auto h-full w-auto'
+          className='h-full w-full'
           src={smile}
           alt='platform'
         />
