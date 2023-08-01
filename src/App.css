@@ -19,3 +19,15 @@
 .header-color {
   color: var(--header_color);
 }
+
+.card {
+  border: 1.5px solid var(--primary_color);
+}
+
+.card:hover {
+  box-shadow: 0 10px 15px -3px var(--primary_color), 0 4px 6px -4px var(--primary_color);
+}
+
+.card-number {
+  color: var(--primary_color);
+}

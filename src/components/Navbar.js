@@ -1,5 +1,4 @@
 import DarkMode from './DarkMode/DarkMode'
-import home from '../images/home-icon/home.svg'
 
 export default function Navbar() {
   return (
