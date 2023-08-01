@@ -13,7 +13,7 @@ export default function Card({ num, title, text }) {
     <div
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
-      className='mb-40 h-100 w-96 p-6 flex flex-col justify-between rounded-lg rounded-br-4xl relative cursor-pointer hover:shadow-lg ease-linear duration-75 card'
+      className='h-100 mv:w-full lg:w-96 p-6 flex flex-col justify-between rounded-lg rounded-br-4xl relative cursor-pointer hover:shadow-lg ease-linear duration-75 card'
     >
       <div className='flex justify-between items'>
         <div className='flex flex-col'>

@@ -22,9 +22,9 @@ const data = [
 
 export default function SectionOne() {
   return (
-    <div className='mt-80 px-12'>
+    <div className='mt-80 px-8'>
       <SectionHeader subtitle="Lorem Ipsum" title="Consecte Adipisc" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore."/>
-      <div className='flex space-x-6 justify-center'>
+      <div className='flex mv:space-x-0 lg:space-x-6 mv:space-y-6 lg:space-y-0 justify-center mv:flex-col lg:flex-row'>
         {data.map((card, index) => <Card key={index} num={card.num} title={card.title} text={card.text} />)}
       </div>
 

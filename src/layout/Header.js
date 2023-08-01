@@ -2,10 +2,10 @@ import smile from '../images/peach.png'
 
 const Header = () => {
   return (
-    <header className='relative flex items-center h-screen px-8 mv:flex-col mv:justify-center z-10 lg:flex-row lg:justify-evenly'>
-      <div className='mv:mr-0 mv:w-full md:mr-4 md:w-100'>
-        <h1 className='text-7xl header-color'>Lorum Isum</h1>
-        <h1 className='text-7xl'>dolar sit amet</h1>
+    <header className='relative flex items-center px-8 mv:flex-col-reverse xl:flex-row lg:justify-evenly mv:pt-24 xl:pt-56'>
+      <div className='mv:w-full md:w-[32rem]'>
+        <h1 className='mv:text-5xl xl:text-7xl header-color'>Lorum Isum</h1>
+        <h1 className='mv:text-5xl xl:text-7xl'>dolar sit amet</h1>
         <p className='mt-5 w-full'>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
@@ -27,9 +27,9 @@ const Header = () => {
           </button>
         </div>
       </div>
-      <div className='h-280 w-auto'>
+      <div className='mv:h-full md:h-280 w-auto mv:mb-12 xl:mb-0'>
         <img
-          className='mx-auto mv:h-5/6 mv:w-5/6 md:h-full md:w-auto '
+          className='mx-auto h-full w-auto'
           src={smile}
           alt='platform'
         />
